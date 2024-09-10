@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오말타로🔮</title>
+
+</head>
+<body>
+
+    <div id="ground">
+        <div id="header">오 말 타 로</div>
+    </div>
+    
+</body>
+</html>
+
+<style>
+    @font-face{
+    font-family:'DNFBitBitv2';
+    font-style:normal;
+    font-weight:400;
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')
+    }
+
+    #header {
+        font-family: DNFBitBitv2;
+        font-size: 25px;
+        margin: 0 auto;
+    }
+
+    #ground {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to top ,#e5b2ca 0%, #7028e440 100%);
+        background-size: 200% 200%;
+        animation: gradientAnimation 4.5s linear infinite alternate;
+    }
+
+    /*배경화면 이미지에 여백없애기*/
+    body { margin: 0;}
+
+    @keyframes gradientAnimation {
+        0% {background-position: 10% 10%;}
+        100% {background-position: 90% 90%;}
+    }
+</style>
